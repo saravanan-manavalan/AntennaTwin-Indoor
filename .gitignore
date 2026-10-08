@@ -1,0 +1,43 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+# Jupyter
+.ipynb_checkpoints/
+# IDE / Editor
+.vscode/
+.idea/
+*.code-workspace
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+# Build / packaging
+build/
+dist/
+*.egg-info/
+# Streamlit
+.streamlit/secrets.toml
+# Temporary files
+*.tmp
+*.temp
+*.log
+# Generated archives
+*.zip
+# Python distribution cache
+pip-wheel-metadata/
+# Local environment files
+.env
+.env.*
+# MATLAB
+*.asv

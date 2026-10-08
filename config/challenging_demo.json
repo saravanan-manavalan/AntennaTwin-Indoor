@@ -1,0 +1,64 @@
+{
+  "name": "challenging_indoor_demo",
+  "description": "Two-partition indoor scenario used to demonstrate baseline-versus-optimized coverage.",
+  "room": {
+    "length_m": 35.0,
+    "width_m": 24.0,
+    "height_m": 3.5,
+    "grid_resolution_m": 0.5
+  },
+  "antenna": {
+    "frequency_hz": 2450000000.0,
+    "tx_power_dbm": 12.0,
+    "gain_dbi": 3.0,
+    "receiver_gain_dbi": 0.0,
+    "height_m": 2.5,
+    "min_distance_m": 0.5,
+    "azimuth_deg": 0.0,
+    "beamwidth_3db_deg": 90.0,
+    "front_to_back_db": 18.0
+  },
+  "receiver": {
+    "sensitivity_dbm": -72.0,
+    "height_m": 1.2,
+    "gain_dbi": 0.0
+  },
+  "walls": [
+    {
+      "name": "Partition_A",
+      "x1_m": 11.5,
+      "y1_m": 0.0,
+      "x2_m": 11.5,
+      "y2_m": 24.0,
+      "material": "concrete",
+      "loss_db": 12.0,
+      "openings": [
+        [
+          10.0,
+          14.0
+        ]
+      ]
+    },
+    {
+      "name": "Partition_B",
+      "x1_m": 23.5,
+      "y1_m": 0.0,
+      "x2_m": 23.5,
+      "y2_m": 24.0,
+      "material": "concrete",
+      "loss_db": 12.0,
+      "openings": [
+        [
+          8.0,
+          12.0
+        ]
+      ]
+    }
+  ],
+  "optimization": {
+    "candidate_spacing_m": 1.0,
+    "boundary_margin_m": 0.5,
+    "orientation_step_deg": 30.0,
+    "minimum_wall_clearance_m": 0.5
+  }
+}
